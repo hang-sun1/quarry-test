@@ -1,0 +1,38 @@
+[features]
+seeds = false
+[programs.localnet]
+quarry_test = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/hang/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[[test.genesis]]
+address = "QMMD16kjauP5knBwxNUJRZ1Z5o3deBuFrqVjBVmmqto"
+program = "deps/quarry_merge_mine.so"
+
+[[test.genesis]]
+address = "QMNeHCGYnLVDn1icRAfQZpjPLBNkfGbSKRB83G5d8KB"
+program = "deps/quarry_mine.so"
+
+[[test.genesis]]
+address = "QMWoBmAyJLAsA1Lh9ugMTw2gciTihncciphzdNzdZYV"
+program = "deps/quarry_mint_wrapper.so"
+
+[[test.genesis]]
+address = "QoP6NfrQbaGnccXQrMLUkog2tQZ4C1RFgJcwDnT8Kmz"
+program = "deps/quarry_operator.so"
+
+[[test.genesis]]
+address = "QRDxhMw1P2NEfiw5mYXG79bwfgHTdasY2xNP76XSea9"
+program = "deps/quarry_redeemer.so"
+
+[[test.genesis]]
+address = "QREGBnEj9Sa5uR91AV8u3FxThgP5ZCvdZUW2bHAkfNc"
+program = "deps/quarry_registry.so"
