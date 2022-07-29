@@ -20,9 +20,9 @@ overflow-checks = true
 
 [dependencies]
 anchor-lang = "0.24.1"
-quarry-merge-mine = { version = "5.1", features = ["cpi"] }
-quarry-mine = { version = "5.1", features = ["cpi"] }
-quarry-mint-wrapper = { version = "5.1", features = ["cpi"] }
-quarry-operator = { version = "5.1", features = ["cpi"] }
-quarry-redeemer = { version = "5.1", features = ["cpi"] }
-quarry-registry = { version = "5.1", features = ["cpi"] }
+quarry-merge-mine = { version = "5.1", features = ["no-entrypoint", "cpi"] }
+quarry-mine = { version = "5.1", features = ["no-entrypoint", "cpi"] }
+quarry-mint-wrapper = { version = "5.1", features = ["no-entrypoint", "cpi"] }
+quarry-operator = { version = "5.1", features = ["no-entrypoint", "cpi"] }
+quarry-redeemer = { version = "5.1", features = ["no-entrypoint", "cpi"] }
+quarry-registry = { version = "5.1", features = ["no-entrypoint", "cpi"] }

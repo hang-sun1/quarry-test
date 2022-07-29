@@ -26,7 +26,7 @@ import chai from "chai"
 chai.use(chaiAsPromised);
 chai.should();
 
-describe("quarry-test", () => {
+describe("quarry sdk testing", () => {
   const { BN, web3 } = anchor;
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
