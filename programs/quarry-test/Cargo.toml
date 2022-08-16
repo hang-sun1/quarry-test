@@ -20,6 +20,7 @@ overflow-checks = true
 
 [dependencies]
 anchor-lang = "0.24.1"
+anchor-spl = "0.24.1"
 quarry-merge-mine = { version = "5.1", features = ["no-entrypoint", "cpi"] }
 quarry-mine = { version = "5.1", features = ["no-entrypoint", "cpi"] }
 quarry-mint-wrapper = { version = "5.1", features = ["no-entrypoint", "cpi"] }
